@@ -1,18 +1,13 @@
-package com.uniajc.modelo;
+package com.uniajc.servicios;
 
-public class Inscripcion {
+import com.uniajc.dao.InscripcionDao;
+import com.uniajc.modelo.InscripcionCurso;
 
-    private int id_inscripcion;
-    private int id_estudiante;
-    private int id_grupo;
+public class InscripcionService {
 
-    public Inscripcion(int id, int estudiante, int grupo) {
-        this.id_inscripcion = id;
-        this.id_estudiante = estudiante;
-        this.id_grupo = grupo;
+    private InscripcionDao dao = new InscripcionDao();
+
+    public void crear(InscripcionCurso i) {
+        dao.guardar(i);
     }
-
-    public int getId_inscripcion() { return id_inscripcion; }
-    public int getId_estudiante() { return id_estudiante; }
-    public int getId_grupo() { return id_grupo; }
 }
