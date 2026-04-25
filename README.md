@@ -1,3 +1,4 @@
+
 # Taller práctico MVC + DAO + Service (Postgres/MySQL)
 
 Este proyecto implementa un sistema académico utilizando el patrón **MVC (Modelo–Vista–Controlador)** junto con **DAO (Data Access Object)** y **Service**.  
@@ -46,3 +47,4 @@ ANA YISETH SOLARTE RUIZ
 GISELA ANDRADE MURILLO
 
 GRUPO: 411
+
