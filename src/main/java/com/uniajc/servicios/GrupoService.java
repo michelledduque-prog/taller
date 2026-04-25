@@ -1,13 +1,13 @@
 package com.uniajc.servicios;
 
-import com.uniajc.dao.GrupoDao;
-import com.uniajc.modelo.Grupo;
+import com.uniajc.dao.InscripcionDao;
+import com.uniajc.modelo.InscripcionCurso;
 
-public class GrupoService {
+public class InscripcionService {
 
-    private GrupoDao dao = new GrupoDao();
+    private InscripcionDao dao = new InscripcionDao();
 
-    public void crear(Grupo g) {
-        dao.guardar(g);
+    public void crear(InscripcionCurso i) {
+        dao.guardar(i);
     }
 }
