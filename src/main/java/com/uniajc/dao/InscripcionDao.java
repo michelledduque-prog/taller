@@ -12,8 +12,8 @@ public class InscripcionDao {
         try (Connection con = ConexionPostgresDatabase.getConnection();
              PreparedStatement ps = con.prepareStatement(sql)) {
 
-            ps.setInt(1, i.getIdEstudiante());
-            ps.setInt(2, i.getIdGrupo());
+            ps.setInt(1, i.getId_estudiante());
+            ps.setInt(2, i.getId_grupo());
 
             ps.executeUpdate();
             System.out.println("Inscripción guardada");
