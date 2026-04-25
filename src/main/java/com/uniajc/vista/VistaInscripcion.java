@@ -1,18 +1,25 @@
-package com.uniajc.modelo;
+package com.uniajc.vista;
 
-public class Inscripcion {
+import java.util.Scanner;
+import com.uniajc.controlador.ControladorInscripcion;
 
-    private int id_inscripcion;
-    private int id_estudiante;
-    private int id_grupo;
+public class VistaInscripcion {
 
-    public Inscripcion(int id, int estudiante, int grupo) {
-        this.id_inscripcion = id;
-        this.id_estudiante = estudiante;
-        this.id_grupo = grupo;
+    public void crearInscripcion() {
+
+        Scanner sc = new Scanner(System.in);
+        ControladorInscripcion c = new ControladorInscripcion();
+
+        System.out.println("=== INSCRIPCIÓN ===");
+
+        System.out.print("ID Estudiante: ");
+        int idEstudiante = sc.nextInt();
+
+        System.out.print("ID Grupo: ");
+        int idGrupo = sc.nextInt();
+
+        c.crear(idEstudiante, idGrupo);
+
+        System.out.println("Inscripción guardada correctamente");
     }
-
-    public int getId_inscripcion() { return id_inscripcion; }
-    public int getId_estudiante() { return id_estudiante; }
-    public int getId_grupo() { return id_grupo; }
 }
