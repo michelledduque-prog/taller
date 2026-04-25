@@ -2,7 +2,7 @@ package main.java.com.uniajc.vista;
 
 import java.util.List;
 import com.uniajc.modelo.InscripcionCurso; // ← corregido: dao → modelo
-
+// cambio para commit
 public class VistaInscripcion {
 
     public void mostrarInscripcion(InscripcionCurso i) {
